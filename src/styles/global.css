@@ -1,0 +1,31 @@
+:root {
+    --bg-color: rgba(32, 33, 36, 1);
+    --font-color: #dfdfdf;
+    --font-color-inverse: #4f4f4f;
+    --color-primary: hsl(200, 67%, 38%);
+    --color-secondary: #acafb5;
+    --color-tertiary: #207aa4;
+    --max-app-width: 42em;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Medium.ttf");
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#app {
+    min-height: 100vh;
+    margin: auto;
+    padding: 0 1.3rem 0 1rem;
+    max-width: var(--max-app-width);
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
